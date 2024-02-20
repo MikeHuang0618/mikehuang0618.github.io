@@ -3,7 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mike's page</title>
+<title>Main page</title>
+<style>
+    h2 {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      border: 1px solid #ffffff;
+      margin: 0;
+      padding: 0 20px;
+      background-color: #ffffff;
+    }
+    h2 a {
+      text-decoration: none;
+      color: #000;
+    }
+</style>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,6 +33,16 @@
             </ul>
         </nav>                   <!-- 導覽列設定結束-->
     </header>
+    <main>
+        <div class="timeline">
+            <div class="event">
+                <br>
+                <div class="event-content">
+                <h2><a href="https://github.com/MikeHuang0618/mikehuang0618.github.io" target="_blank">Github io</a></h2>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <button id="backToTop" onclick="scrollToTop()">回到頂部</button>
     <script>
