@@ -15,10 +15,15 @@
           <div class="top"><small class="circleBtn">&times;</small><small class="circleBtn">-</small><small class="circleBtn">+</small><small class="topText">個人履歷</small></div>
           <div class="bottom">
             <div class="activeSidebar">
-                <div class="navTab active" data-target="skills"><span class="fas fa-code"></span></div>
-                <div class="navTab" data-target="experience"><span class="fas fa-graduation-cap"> </span></div>
+                <div class="navTab" data-target="skills" title="Skills">
+                  <span class="fas fa-code"></span>
+                  <div class="tooltip">Skills</div>
+                </div>
+                <div class="navTab" data-target="experience" title="Experience">
+                  <span class="fas fa-graduation-cap"></span>
+                </div>
             </div>
-            <div class="sidebar" data-id="skills">
+            <div class="sidebar" data-id="skills" style="display: none">
               <div class="folder"><a class="folderTitle" href="javascript:;"><i class="fas fa-angle-down"></i>Skills</a>
                 <div class="folderContent">
                   <ul class="listSkill">

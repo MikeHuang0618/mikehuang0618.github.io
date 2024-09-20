@@ -137,6 +137,9 @@ ul {
   display: flex;
   height: 100%;
 }
+.resume .bottom.hidden {
+  display: none;
+}
 .resume .bottom .activeSidebar {
   width: 50px;
   background-color: #333333;
@@ -153,7 +156,8 @@ ul {
 }
 .resume .bottom .sidebar {
   background: #252526;
-  flex: 4;
+  flex: 0;
+  display: none;
 }
 .resume .bottom .sidebar .folder .folderTitle {
   display: flex;
@@ -176,10 +180,11 @@ ul {
 }
 .resume .bottom .right {
   background: #1E1E1E;
-  flex: 6;
+  flex: 1;
   padding: 0px 30px;
   padding-bottom: 20px;
   overflow: auto;
+  height: 100%;
 }
 .resume .bottom .right::-webkit-scrollbar {
   width: 0px;
