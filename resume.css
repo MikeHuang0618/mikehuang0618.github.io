@@ -143,10 +143,17 @@ ul {
 .resume .bottom .activeSidebar {
   width: 50px;
   background-color: #333333;
+  transition: width 0.3s;
+  overflow: hidden;
+}
+.resume .bottom .activeSidebar:hover {
+  width: 200px;
 }
 .resume .bottom .activeSidebar .navTab {
+  position: relative;
+  display: flex;
   text-align: center;
-  padding: 12px 0px;
+  padding: 12px 12px;
   font-size: 18px;
   cursor: pointer;
   color: #838383;
@@ -154,6 +161,21 @@ ul {
 .resume .bottom .activeSidebar .navTab.active, .resume .bottom .activeSidebar .navTab:hover {
   color: white;
 }
+
+.tooltip {
+  display: none;
+  position: absolute;
+  left: 30%;
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.navTab:hover .tooltip {
+  display: block; /* 懸停時顯示 */
+  opacity: 1; /* 懸停時顯示 */
+}
+
 .resume .bottom .sidebar {
   background: #252526;
   flex: 0;
