@@ -1,37 +1,283 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mike's page</title>
-<link rel="stylesheet" href="styles.css">
+<title>Mike's resume</title>
+<link rel="stylesheet" href="resume.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="resume.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1><a href="index.html"><img src="img/pic.jpg" width="70px"></a></h1>  <!-- 置入ＬＯＧＯ圖片-->
-
-        <nav class="navigation"> <!-- 導覽列設定開始-->
-           <ul>
-                <li><a href="index.html">&nbsp;&nbsp;首頁</a></li>
-                <li><a href="resume.html">&nbsp;&nbsp;Resume</a></li>
-                <li><a href="project.html">&nbsp;&nbsp;專案</a></li>
-            </ul>
-        </nav>                   <!-- 導覽列設定結束-->
-    </header>
-
-    <button id="backToTop" onclick="scrollToTop()">回到頂部</button>
-    <script>
-    window.onscroll = function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("backToTop").style.display = "block";
-        } else {
-        document.getElementById("backToTop").style.display = "none";
-        }
-    };
-
-    function scrollToTop() {
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    }
-    </script>
+    <div class="resume-container">
+        <div class="resume">
+          <div class="top"><small class="circleBtn">&times;</small><small class="circleBtn">-</small><small class="circleBtn">+</small><small class="topText">個人履歷</small></div>
+          <div class="bottom">
+            <div class="activeSidebar">
+                <div class="navTab active" data-target="skills"><span class="fas fa-code"></span></div>
+                <div class="navTab" data-target="experience"><span class="fas fa-graduation-cap"> </span></div>
+            </div>
+            <div class="sidebar" data-id="skills">
+              <div class="folder"><a class="folderTitle" href="javascript:;"><i class="fas fa-angle-down"></i>Skills</a>
+                <div class="folderContent">
+                  <ul class="listSkill">
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                        <div class="p180"></div>
+                        <div class="p270"></div>
+                        <div class="p360"></div>
+                      </div>ML / DL
+                    </li>
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                        <div class="p180"></div>
+                        <div class="p270"></div>
+                      </div>Image Process
+                    </li>
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                        <div class="p180"></div>
+                        <div class="p270"></div>
+                      </div>Computer Vision
+                    </li>
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                        <div class="p180"></div>
+                      </div>Backend (API/SQL/CI)
+                    </li>
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                      </div>Data Mining
+                    </li>
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                      </div>Heuristic Algorithm
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="folder"><a class="folderTitle" href="#"><i class="fas fa-angle-down"></i>Languages</a>
+                <div class="folderContent">
+                  <ul class="listProgram">
+                    <li>Python
+                      <div class="bar">
+                        <div class="value" data-percent="80%"></div>
+                      </div>
+                    </li>
+                    <li>C/C++
+                      <div class="bar">
+                        <div class="value" data-percent="60%"></div>
+                      </div>
+                    </li>
+                    <li>Android
+                        <div class="bar">
+                          <div class="value" data-percent="45%"></div>
+                        </div>
+                    </li>
+                    <li>SQL
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                    <li>HTML/CSS/JS
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                    <li>C#
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="folder"><a class="folderTitle" href="#"><i class="fas fa-angle-down"></i>Tools</a>
+                <div class="folderContent">
+                  <ul class="listProgram">
+                    <li>Markdown
+                      <div class="bar">
+                        <div class="value" data-percent="80%"></div>
+                      </div>
+                    </li>
+                    <li>Git/Github/Gitlab
+                      <div class="bar">
+                        <div class="value" data-percent="80%"></div>
+                      </div>
+                    </li>
+                    <li>Docker
+                        <div class="bar">
+                          <div class="value" data-percent="70%"></div>
+                        </div>
+                    </li>
+                    <li>SQL
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                    <li>HTML/CSS/JS
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                    <li>C#
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar" data-id="experience" style="display: none">
+                <div class="folder"><a class="folderTitle" href="#"><i class="fas fa-angle-down"></i>Education</a>
+                    <div class="folderContent">
+                      <ul class="listExp">
+                        <li class="expBlock"><span class="year">2021 Sep<br>~<br>2023 Jun</span>
+                            <ul class="infoList">
+                              <li style="font-size: 20px;">NKUST</li>
+                              <li class="companyName">Electronical Engineering, MS</li>
+                              <li class="frameworks">Python / C++</li>
+                            </ul>
+                        </li>
+                        <li class="expBlock"><span class="year">2017 Sep<br>~<br>2021 Jun</span>
+                          <ul class="infoList"> 
+                            <li style="font-size: 20px;">NUU</li>
+                            <li class="companyName">Electronic Engineering, BS</li>
+                            <li class="frameworks">Python / C++ / C# / SQL </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="folder"><a class="folderTitle" href="#"><i class="fas fa-angle-down"></i>Experience</a>
+                <div class="folderContent">
+                  <ul class="listExp">
+                    <li class="expBlock"><span class="year">2023 Aug<br>~<br>now</span>
+                      <ul class="infoList"> 
+                        <li style="font-size: 20px;">Computer Vision Engineer</li>
+                        <li class="companyName">Plustek Inc.</li>
+                        <li class="frameworks">Python / C++</li>
+                      </ul>
+                    </li>
+                    <li class="expBlock"><span class="year">2021 Sep<br>~<br>2023 Mar</span>
+                        <ul class="infoList"> 
+                          <li style="font-size: 20px;">Assistant Software Engineer</li>
+                          <li class="companyName">Plustek Inc.</li>
+                          <li class="frameworks">Python</li>
+                        </ul>
+                    </li>
+                    <li class="expBlock"><span class="year">2020 Mar<br>~<br>2020 Aug</span>
+                        <ul class="infoList"> 
+                          <li style="font-size: 20px;">Intern</li>
+                          <li class="companyName">ITRI</li>
+                          <li class="frameworks">Python / C# / SQL </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+            </div>
+            <div class="right">
+              <h1 class="titleName">Mike</h1>
+              <h3 class="subTitle">Computer Vision Engineer</h3>
+              <hr/>
+              <div class="extBtns">
+                <a class="btnExtLink" href="https://mikehuang0618.github.io/" target="_blank">Blog</a>
+                <a class="btnExtLink fill" href="https://github.com/mikehuang0618" target="_blank">Github</a>
+                <a class="btnExtLink" href="https://www.linkedin.com/in/mike-z-h-huang-01683a231/" target="_blank">Linkedin</a>
+              </div>
+              <h2>Work Experience</h2>
+              <ul class="basic">
+                <li>
+                    <p class="comment" style="font-size: 20px; font-weight: bold;">Computer Vision Engineer at Plustek Inc.</p>
+                    <ul>
+                        <li style="color: #3E91FF; font-size: 20px;">Developed an image processing algorithm to remove lines from text and lines overlapping
+                            <ul>
+                                <li style="color: #E8E8E8; font-size: 18px;">- Detection accuracy improved from 39% to 71%</li>
+                                <li style="color: #E8E8E8; font-size: 18px;">- Inference time per image on C++ platform: 3-10 ms</li>
+                            </ul>
+                        </li>
+                        <li style="color: #3E91FF; font-size: 20px;">Designed and maintained DL models for text recognition
+                            <ul>
+                                <li style="color: #E8E8E8; font-size: 18px;">- Inference time per image on C++ platform: 15-30 ms</li>
+                            </ul>
+                        </li>
+                        <li style="color: #3E91FF; font-size: 20px;">Assisted with server setup and environment configuration
+                            <ul>
+                                <li style="color: #E8E8E8; font-size: 18px;">- Transitioned version control system from SVN to GIT</li>
+                                <li style="color: #E8E8E8; font-size: 18px;">- Established internal testing CICD environment</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="comment" style="font-size: 20px; font-weight: bold;">Assistant Software Engineer at Plustek Inc.</p>
+                    <ul>
+                        <li style="color: #3E91FF; font-size: 20px;">Collection and processing of handwritten text datasets
+                            <ul>
+                                <li style="color: #E8E8E8; font-size: 18px;">- Text detection model design and development</li>
+                                <li style="color: #E8E8E8; font-size: 18px;">- Performance testing and analysis of AI models in embedded systems</li>
+                                <li style="color: #E8E8E8; font-size: 18px;">- Handwritten character location and recognition</li>
+                                <li style="color: #E8E8E8; font-size: 18px;">- Field feature detection</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="comment" style="font-size: 20px; font-weight: bold;">Intern at ITRI</p>
+                    <ul>
+                        <li style="color: #3E91FF; font-size: 20px;">Analyzed pet emotions and implemented recognition methods based on features
+                            <ul>
+                                <li style="color: #E8E8E8; font-size: 18px;">- Implemented a smart pet surveillance system</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="comment" style="font-size: 20px; font-weight: bold;">Publish</p>
+                    <ul>
+                        <li style="color: #3E91FF; font-size: 20px;">International journals
+                            <ul>
+                                <li style="color: #E8E8E8; font-style: italic; font-size: 18px;">- Design and Validation of a Deep Learning Model for Renal Stone Detection and Segmentation on Kidney–Ureter–Bladder Images, Bioengineering, 2023</li>
+                            </ul>
+                            <ul>
+                                <li style="color: #E8E8E8; font-style: italic; font-size: 18px;">- WPO: A Whale Particle Optimization Algorithm, Int J Comput Intell Syst, 2023</li>
+                            </ul>
+                            <ul>
+                                <li style="color: #E8E8E8; font-style: italic; font-size: 18px;">- Retinal Vascular Image Segmentation Using Improved UNet Based on Residual Module, Bioengineering, 2023</li>
+                            </ul>
+                            <ul>
+                                <li style="color: #E8E8E8; font-style: italic; font-size: 18px;">- IWGAN: Anomaly Detection in Airport Based on Improved Wasserstein Generative Adversarial Network, Applied Sciences, 2023</li>
+                            </ul>
+                            <ul>
+                                <li style="color: #E8E8E8; font-style: italic; font-size: 18px;">- Deep Learning Model for Computer-Aided Diagnosis of Urolithiasis Detection from Kidney–Ureter–Bladder Images, Bioengineering, 2022</li>
+                            </ul>
+                            <ul>
+                                <li style="color: #E8E8E8; font-style: italic; font-size: 18px;">- Multiple Feature Dependency Detection for Deep Learning Technology - Smart Pet Surveillance System Implementation, Electronics, 2020</li>
+                            </ul>
+                        </li>
+                        <li style="color: #3E91FF; font-size: 20px;">International conference papers
+                            <ul>
+                                <li style="color: #E8E8E8; font-style: italic; font-size: 18px;">- Recognition of Handwritten English and Digits Using Stroke Features and MLP, SCIS&ISIS, 2023</li>
+                            </ul>
+                            <ul>
+                                <li style="color: #E8E8E8; font-style: italic; font-size: 18px;">- Anomaly Detection in Airport based on Generative Adversarial Network for Intelligent Transportation System, ICCE-TW, 2022</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
