@@ -15,6 +15,7 @@ html, body {
 
 @keyframes caret {
 	50% { border-right-color: transparent; }
+  to { border-right: none; }
 }
 
 .resume .bottom .right .titleName {
@@ -24,7 +25,7 @@ html, body {
 	overflow: hidden;
 	border-right: .05em solid;
 	animation: typing 5s steps(5) forwards,
-	           caret 1s steps(1) infinite;
+	           caret 1s steps(1) 5s forwards;
 }
 
 .resume .bottom .right .subTitle {
@@ -35,7 +36,7 @@ html, body {
 	overflow: hidden;
 	border-right: .05em solid;
 	animation: typing 5s steps(25) forwards,
-	           caret 1s steps(1) infinite;
+	           caret 1s steps(1) 5s forwards;
 }
 
 h2, h4, h5 {
