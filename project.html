@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mike's project</title>
+<link rel="stylesheet" href="resume.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="resume.js" defer></script>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="resume">
+          <div class="top">
+            <small class="circleBtn">&times;</small>
+            <small class="circleBtn">-</small>
+            <small class="circleBtn">+</small>
+            <small class="topText">Project</small>
+          </div>
+          <div class="bottom">
+            <div class="activeSidebar">
+                <div class="navTab" data-target="skills">
+                  <span class="fas fa-code"></span>
+                  <div class="tooltip">Skills</div>
+                </div>
+                <div class="navTab" data-target="experience">
+                  <span class="fas fa-graduation-cap"></span>
+                  <div class="tooltip">Experience</div>
+                </div>
+            </div>
+            <div class="sidebar" data-id="skills" style="display: none">
+              <div class="folder"><a class="folderTitle" href="javascript:;"><i class="fas fa-angle-down"></i>Skills</a>
+                <div class="folderContent">
+                  <ul class="listSkill">
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                        <div class="p180"></div>
+                        <div class="p270"></div>
+                        <div class="p360"></div>
+                      </div>ML / DL
+                    </li>
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                        <div class="p180"></div>
+                        <div class="p270"></div>
+                      </div>Image Process
+                    </li>
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                        <div class="p180"></div>
+                        <div class="p270"></div>
+                      </div>Computer Vision
+                    </li>
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                        <div class="p180"></div>
+                      </div>Backend (API/SQL/CI)
+                    </li>
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                      </div>Data Mining
+                    </li>
+                    <li>
+                      <div class="circlePercent">
+                        <div class="p90"></div>
+                      </div>Heuristic Algorithm
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="folder"><a class="folderTitle" href="#"><i class="fas fa-angle-down"></i>Languages</a>
+                <div class="folderContent">
+                  <ul class="listProgram">
+                    <li>Python
+                      <div class="bar">
+                        <div class="value" data-percent="80%"></div>
+                      </div>
+                    </li>
+                    <li>C/C++
+                      <div class="bar">
+                        <div class="value" data-percent="60%"></div>
+                      </div>
+                    </li>
+                    <li>Android
+                        <div class="bar">
+                          <div class="value" data-percent="45%"></div>
+                        </div>
+                    </li>
+                    <li>SQL
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                    <li>HTML/CSS/JS
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                    <li>C#
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="folder"><a class="folderTitle" href="#"><i class="fas fa-angle-down"></i>Tools</a>
+                <div class="folderContent">
+                  <ul class="listProgram">
+                    <li>Markdown
+                      <div class="bar">
+                        <div class="value" data-percent="80%"></div>
+                      </div>
+                    </li>
+                    <li>Git/Github/Gitlab
+                      <div class="bar">
+                        <div class="value" data-percent="80%"></div>
+                      </div>
+                    </li>
+                    <li>Docker
+                        <div class="bar">
+                          <div class="value" data-percent="50%"></div>
+                        </div>
+                    </li>
+                    <li>CMakeFile/MakeFile
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                    <li>Jenkins
+                      <div class="bar">
+                        <div class="value" data-percent="40%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar" data-id="experience" style="display: none">
+                <div class="folder"><a class="folderTitle" href="#"><i class="fas fa-angle-down"></i>Education</a>
+                    <div class="folderContent">
+                      <ul class="listExp">
+                        <li class="expBlock"><span class="year">2021 Sep<br>~<br>2023 Jun</span>
+                            <ul class="infoList">
+                              <li style="font-size: 20px;">NKUST</li>
+                              <li class="companyName">Electronical Engineering, MS</li>
+                              <li class="frameworks">Python / C++</li>
+                            </ul>
+                        </li>
+                        <li class="expBlock"><span class="year">2017 Sep<br>~<br>2021 Jun</span>
+                          <ul class="infoList"> 
+                            <li style="font-size: 20px;">NUU</li>
+                            <li class="companyName">Electronic Engineering, BS</li>
+                            <li class="frameworks">Python / C++ / C# / SQL </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="folder"><a class="folderTitle" href="#"><i class="fas fa-angle-down"></i>Experience</a>
+                <div class="folderContent">
+                  <ul class="listExp">
+                    <li class="expBlock"><span class="year">2023 Aug<br>~<br>now</span>
+                      <ul class="infoList"> 
+                        <li style="font-size: 20px;">Computer Vision Engineer</li>
+                        <li class="companyName">Plustek Inc.</li>
+                        <li class="frameworks">Python / C++</li>
+                      </ul>
+                    </li>
+                    <li class="expBlock"><span class="year">2021 Sep<br>~<br>2023 Mar</span>
+                        <ul class="infoList"> 
+                          <li style="font-size: 20px;">Assistant Software Engineer</li>
+                          <li class="companyName">Plustek Inc.</li>
+                          <li class="frameworks">Python</li>
+                        </ul>
+                    </li>
+                    <li class="expBlock"><span class="year">2020 Mar<br>~<br>2020 Aug</span>
+                        <ul class="infoList"> 
+                          <li style="font-size: 20px;">Intern</li>
+                          <li class="companyName">ITRI</li>
+                          <li class="frameworks">Python / C# / SQL </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+            </div>
+            <div class="right">
+              <h1 class="titleName">Mike Z. H. Huang</h1>
+              <h3 class="subTitle">Computer Vision Engineer</h3>
+              <hr/>
+              <div class="extBtns">
+                <a class="btnExtLink" href="index.html">Resume</a>
+                <a class="btnExtLink fill" href="project.html" target="_blank">Project</a>
+                <a class="btnExtLink" href="https://www.linkedin.com/in/mike-z-h-huang/" target="_blank">Linkedin</a>
+              </div>
+              <a href="https://github.com/MikeHuang0618/SAM-UI.git" target="_blank" style="text-decoration: none; color: inherit;">
+                <h2>Segment anything 2 UI</h2>
+                <ul class="basic">
+                  <li>
+                      <ul>
+                          <li style="color: #3E91FF; font-size: 20px;">This project provides an intuitive UI for generating and editing semantic segmentation labels using Facebook Research's SAM (Segment-Anything Model).
+                              <li></li>
+                              <ul>
+                                  <li style="color: #E8E8E8; font-size: 18px; font-weight: bold; font-style: italic">
+                                      Intuitive UI for Semantic Segmentation
+                                      <ul>
+                                          <li style="color: #E8E8E8; font-size: 18px; font-weight: normal; font-style: normal;">- Provides an easy-to-use interface for generating and editing semantic segmentation labels using the SAM model.</li>
+                                      </ul>
+                                  </li>
+                                  <li style="color: #E8E8E8; font-size: 18px; font-weight: bold; font-style: italic">
+                                      Integration with Facebook Research's SAM
+                                      <ul>
+                                          <li style="color: #E8E8E8; font-size: 18px; font-weight: normal; font-style: normal;">- Leverages the pretrained Segment-Anything Model (SAM) for automatic initial segmentation.</li>
+                                      </ul>
+                                  </li>
+                                  <li style="color: #E8E8E8; font-size: 18px; font-weight: bold; font-style: italic">
+                                      Interactive Label Editing
+                                      <ul>
+                                          <li style="color: #E8E8E8; font-size: 18px; font-weight: normal; font-style: normal;">- Allows users to refine and adjust labels in real-time, ensuring high accuracy.</li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                </ul>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
