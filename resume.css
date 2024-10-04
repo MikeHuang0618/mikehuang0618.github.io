@@ -20,11 +20,11 @@ html, body {
 
 .resume .bottom .right .titleName {
 	font: bold 200% Consolas, Monaco, monospace;
-	width: 5ch;
+	width: 17ch;
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: .05em solid;
-	animation: typing 5s steps(5) forwards,
+	animation: typing 5s steps(17) forwards,
 	           caret 1s steps(1) 5s forwards;
 }
 
@@ -81,9 +81,9 @@ ul {
   overflow: hidden;
 }
 .resume .top {
+  min-height: 24px;
   position: relative;
   background-color: #3C3C3C;
-  height: 24px;
   padding: 0px 10px;
   display: flex;
   align-items: center;
